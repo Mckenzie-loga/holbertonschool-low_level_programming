@@ -1,18 +1,14 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
- * print_line - prints a line.
- * @n: is the number of times the line should be printed.
- * Return: returns the line.
+ * print_line - draws a straight line in the terminal
+ * @n: number of times to print '_'
  */
 void print_line(int n)
 {
-
 	int i;
 
-	for (i = 1; i <= n; i++)
-	{
+	for (i = 0; i < n; i++)
 		_putchar('_');
-	}
 	_putchar('\n');
 }
