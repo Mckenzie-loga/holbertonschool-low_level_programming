@@ -1,23 +1,16 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
- * print_most_numbers - prints numbers 0 to 9.
- * Return: returns the numbers.
+ * print_most_numbers - prints numbers from 0 to 9, excluding 2 and 4
  */
 void print_most_numbers(void)
 {
-	int i;
+	char c;
 
-	for (i = 48; i <= 57; i++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		if (i == 50 || i == 52)
-		{
-			continue;
-		}
-		else
-		{
-			_putchar(i);
-		}
+		if (c != '2' && c != '4')
+			_putchar(c);
 	}
 	_putchar('\n');
 }
