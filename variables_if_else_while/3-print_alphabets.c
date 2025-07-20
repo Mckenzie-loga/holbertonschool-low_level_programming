@@ -1,20 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Print alphabet excluding e & q
+ * main - Entry point
  *
- * Return: Always 0.
+ * Description: Prints the alphabet in lowercase then uppercase
+ *              using only putchar (3 times total)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char letter;
+        char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		if (letter != 'e' && letter != 'q')
-			putchar(letter);
-	}
+        /* Print lowercase alphabet */
+        for (letter = 'a'; letter <= 'z'; letter++)
+                putchar(letter);
 
-	putchar('\n');
-	return (0);
+        /* Print uppercase alphabet */
+        for (letter = 'A'; letter <= 'Z'; letter++)
+                putchar(letter);
+
+        putchar('\n');
+
+        return (0);
 }
