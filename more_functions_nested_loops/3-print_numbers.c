@@ -1,16 +1,13 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
- * print_numbers - prints numbers 0 to 9.
- * Return: returns the numbers.
+ * print_numbers - prints the numbers from 0 to 9 followed by a new line
  */
 void print_numbers(void)
 {
-	int i;
+	char c;
 
-	for (i = 48; i <= 57; i++)
-	{
-		_putchar(i);
-	}
+	for (c = '0'; c <= '9'; c++)
+		_putchar(c);
 	_putchar('\n');
 }
