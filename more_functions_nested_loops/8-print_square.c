@@ -1,26 +1,22 @@
 #include "main.h"
 
 /**
- * print_square - prints a square, followed by a new line;
- * @n: nunber to be squared
+ * print_square - prints a square using '#' character
+ * @size: size of the square
  */
-void print_square(int n)
+void print_square(int size)
 {
-	if (n <= 0)
+	int row, col;
+
+	if (size <= 0)
 	{
 		_putchar('\n');
+		return;
 	}
-	else
+	for (row = 0; row < size; row++)
 	{
-		int i, j;
-
-		for (i = 0; i < n; i++)
-		{
-			for (j = 0; j < n; j++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
+		for (col = 0; col < size; col++)
+			_putchar('#');
+		_putchar('\n');
 	}
 }
