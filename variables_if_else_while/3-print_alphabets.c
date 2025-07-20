@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Print alphabet excluding e & q
- *
- * Return: Always 0.
+ * main - Entry point
+ * Description: Prints the alphabet in lowercase then uppercase
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char letter;
+        char c;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-			putchar(letter);
-	}
-
-	putchar('\n');
-	return (0);
+        for (c = 'a'; c <= 'z'; c++)
+                putchar(c);
+        for (c = 'A'; c <= 'Z'; c++)
+                putchar(c);
+        putchar('\n');
+        return (0);
 }
